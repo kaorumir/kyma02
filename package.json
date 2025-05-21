@@ -1,0 +1,13 @@
+{
+    "name": "podplugin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "ui5 serve --open index.html",
+      "build": "ui5 build --all"
+    },
+    "dependencies": {
+      "@ui5/cli": "^3.0.0"
+    }
+  }
+  

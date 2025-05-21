@@ -1,0 +1,28 @@
+{
+    "sap.app": {
+      "id": "podplugin",
+      "type": "application",
+      "title": "Pod Plugin",
+      "applicationVersion": {
+        "version": "1.0.0"
+      }
+    },
+    "sap.ui5": {
+      "rootView": {
+        "viewName": "podplugin.view.App",
+        "type": "XML",
+        "async": true,
+        "id": "app"
+      },
+      "dependencies": {
+        "libs": {
+          "sap.m": {}
+        }
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      }
+    }
+  }
+  
