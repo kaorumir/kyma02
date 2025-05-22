@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podplugin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podplugin
+  template:
+    metadata:
+      labels:
+        app: podplugin
+    spec:
+      containers:
+        - name: podplugin
+          image: mittilpa/podplugin02
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: podplugin
+spec:
+  selector:
+    app: podplugin
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

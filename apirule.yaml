@@ -1,0 +1,16 @@
+apiVersion: gateway.kyma-project.io/v1beta1
+kind: APIRule
+metadata:
+  name: api-rule-podplugin
+  namespace: default
+spec:
+  gateway: kyma-system/kyma-gateway
+  host: podplugin-api.ffc92cb.kyma.ondemand.com  # Reemplaza según tu subdominio
+  service:
+    name: podplugin
+    port: 80
+  rules:
+    - path: /.*
+      methods: ["GET", "POST", "PUT", "DELETE"]
+      accessStrategies:
+        - handler: noop
