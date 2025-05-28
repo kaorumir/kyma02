@@ -1,24 +1,28 @@
 {
-    "sap.dmc.mes.ui.plugins": [
-      {
-        "id": "podplugin",
-        "type": "VIEW_PLUGIN",
-        "allowMultipleInstances": false,
-        "supportedPodTypes": ["WORK_CENTER", "OPERATION", "ORDER", "OTHER"],
-        "title": "Pod Plugin de Ejemplo",
-        "description": "Un plugin de prueba para un pod",
-        "url": "https://podplugin-api.ffc92cb.kyma.ondemand.com",
-        "component": "podplugin.Component",
-        "settings": {
-          "sap.app": {
-            "id": "podplugin",
-            "applicationVersion": {
-              "version": "1.0.0"
-            }
+  "sap.dmc.mes.ui.plugins": [
+    {
+      "id": "podplugin",
+      "type": "VIEW_PLUGIN",
+      "allowMultipleInstances": false,
+      "supportedPodTypes": [
+        "WORK_CENTER",
+        "OPERATION",
+        "ORDER",
+        "OTHER"
+      ],
+      "title": "Pod Plugin de Ejemplo",
+      "description": "Un plugin de prueba para un pod",
+      "url": "https://podplugin-api.ffc92cb.kyma.ondemand.com/",
+      "component": "podplugin.Component",
+      "settings": {
+        "sap.app": {
+          "id": "podplugin",
+          "applicationVersion": {
+            "version": "1.0.0"
           }
-        },
-        "extends": "sap.dme.podfoundation.component"
-      }
-    ]
-  }
-  
+        }
+      },
+      "extends": "sap.dme.podfoundation.component"
+    }
+  ]
+}
