@@ -1,7 +1,7 @@
 //@ui5-bundle podplugin/Component-preload.js
 sap.ui.require.preload({
 	"podplugin/Component.js":function(){
-sap.ui.define(["sap/ui/core/UIComponent"],function(n){"use strict";return n.extend("podplugin.Component",{metadata:{manifest:"json"}})});
+sap.ui.define(["sap/ui/core/UIComponent"],function(n){"use strict";return n.extend("podplugin.Component",{metadata:{manifest:"json"},init:function(){n.prototype.init.apply(this,arguments)}})});
 },
 	"podplugin/controller/App.controller.js":function(){
 sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("podplugin.controller.App",{})});
