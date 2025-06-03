@@ -12,7 +12,7 @@
       ],
       "title": "Pod Plugin de Ejemplo",
       "description": "Un plugin de prueba para un pod",
-      "url": "https://podplugin-api.c-97d734c.kyma.ondemand.com/",
+      "url": "https://podplugin-api.c-97d734c.kyma.ondemand.com",
       "component": "podplugin.Component",
       "settings": {
         "sap.app": {
