@@ -5,12 +5,12 @@ metadata:
   namespace: default
 spec:
   gateway: kyma-system/kyma-gateway
-  host: podplugin-api.c-97d734c.kyma.ondemand.com # Reemplaza según tu subdominio
+  host: podplugin-api.c-97d734c.kyma.ondemand.com  # Verifica que sea único en el cluster
   service:
     name: podplugin
     port: 80
   rules:
-    - path: /.*
+    - path: /
       methods: ["GET", "POST", "PUT", "DELETE"]
       accessStrategies:
         - handler: noop
